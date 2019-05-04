@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@android:color/holo_blue_bright"
+>
+
+    <ScrollView
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="0.8"
+            android:paddingTop="10dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:fadeScrollbars="false"
+    >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+        >
+
+            <TextView
+                    android:id="@+id/popup_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/popup_title"
+                    android:textStyle="bold"
+                    android:text="@string/popup_title"/>
+
+            <TextView
+                    android:id="@+id/popup_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/popup_content"
+                    android:text="@string/popup_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+    >
+
+        <Button
+                android:id="@+id/popup_close_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/popup_close"
+                android:text="@string/popup_close"
+                android:layout_margin="8dp"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>
